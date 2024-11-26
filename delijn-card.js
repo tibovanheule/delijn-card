@@ -195,7 +195,11 @@ class DeLijnCard extends HTMLElement {
           root.getElementById('container').innerHTML = '<div><span>No passages anymore today</span></div>' //this.style.display = 'none';
         }
       } else {
-        root.getElementById('container').innerHTML = '<div><span>No passages anymore today</span></div>' //this.style.display = 'none';
+	let div = document.createElement("div");
+	let span = document.createElement("span");
+	span.innerText = "No passages anymore today";
+	div.appendNode()
+        root.getElementById('container') //this.style.display = 'none';
       }
     }
 
